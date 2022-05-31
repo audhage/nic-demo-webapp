@@ -13,8 +13,8 @@
 // console.log("Server running at http://localhost:%d", port);
 
 
-import { createServer } from 'http';
-import { readFile } from 'fs';
+var http = require('http'),
+    fs = require('fs');
 
 readFile('./index.html', function (err, html) {
     if (err) {
